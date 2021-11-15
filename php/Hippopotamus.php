@@ -102,13 +102,13 @@ class Hippopotamus {
     }
 
     public function fight(Hippopotamus $adversaire) {
-        if ($this->tusksSize > $adversaire->tusksSize) { echo "Le gagnant est " + $this->name + "<br/>"; }
-        elseif ($this->tusksSize < $adversaire->tusksSize) { echo "Le gagnant est " + $adversaire->name + "<br/>"; }
+        if ($this->tusksSize > $adversaire->tusksSize) { echo "Le gagnant est " . $this->name . "<br/>"; }
+        elseif ($this->tusksSize < $adversaire->tusksSize) { echo "Le gagnant est " . $adversaire->name . "<br/>"; }
         else { echo "Egalité <br/>" ;}
     }
 
     function convertToString() {
-        echo "Hippopotame: " + $this->name + ", pese: " + $this->weight + "kg et la taille de ses défenses est " + $this->tusksSize + "m. <br/>" ;
+        echo "Hippopotame: " . $this->name . ", pese: " . $this->weight . "kg et la taille de ses défenses est " . $this->tusksSize . "m. <br/>" ;
     }
 
 }

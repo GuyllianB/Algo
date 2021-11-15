@@ -15,7 +15,7 @@ for ($i=1; $i<=21; $i++) {
         $hippo1->swim();
     }
     $hippo1->convertToString();
-    echo "Fin de la journée : " + $i + "<br/>";
+    echo "Fin de la journée : " . $i . "<br/>";
 }
 
 ?>
