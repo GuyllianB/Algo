@@ -90,6 +90,12 @@ class Hippopotamus {
         return $this;
     }
 
+    public function __construct(string $name, int $weight, int $tusksSize)
+    {
+        $this->setName($name)
+            ->setWeight($weight)
+            ->setTusksSize($tusksSize);
+    }
 
     public function eat() {
         $this->weight = $this->weight + 1;
@@ -104,7 +110,7 @@ class Hippopotamus {
     public function fight(Hippopotamus $adversaire) {
         if ($this->tusksSize > $adversaire->tusksSize) { echo "Le gagnant est " . $this->name . "<br/>"; }
         elseif ($this->tusksSize < $adversaire->tusksSize) { echo "Le gagnant est " . $adversaire->name . "<br/>"; }
-        else { echo "Egalité <br/>" ;}
+        else { echo "Egalité <br/>";}
     }
 
     function convertToString() {
